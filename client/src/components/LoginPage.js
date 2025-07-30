@@ -143,7 +143,7 @@ const LoginPage = ({ onLogin, onSwitchToRegister }) => {
             style={{ width: '100%' }}
             disabled={loading}
           >
-            {loading ? 'Signing In...' : 'Sign In'}
+            {loading ? 'Login In...' : 'Login In'}
           </button>
         </form>
 

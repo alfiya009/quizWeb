@@ -177,7 +177,7 @@ const RegisterPage = ({ onRegister, onSwitchToLogin }) => {
                 fontSize: '0.9rem'
               }}
             >
-              Sign in here
+              Login in here
             </button>
           </p>
         </div>
