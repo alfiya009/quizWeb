@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://quiz-web-vvlj.onrender.com/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 // Create axios instance with default config
 const api = axios.create({
@@ -64,4 +64,4 @@ export const resultsAPI = {
   getLeaderboard: (params = {}) => api.get('/results/leaderboard', { params }),
 };
 
-export default api; 
+export default api;
