@@ -26,7 +26,7 @@ A complete full-stack quiz application built with React frontend and Node.js/Exp
 - **Quiz Results**: Complete quiz attempts with detailed analytics
 - **Performance Tracking**: User statistics and progress monitoring
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend
 - **React 18.2.0** - Modern UI framework
@@ -49,7 +49,7 @@ A complete full-stack quiz application built with React frontend and Node.js/Exp
 - **MongoDB** - Document-based database
 - **Mongoose** - Schema-based modeling
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 quiz-application/
@@ -137,7 +137,7 @@ quiz-application/
 
 8. **Open your browser** and navigate to `http://localhost:3000`
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/auth/register` - User registration
