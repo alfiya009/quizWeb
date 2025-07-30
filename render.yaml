@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: quiz-app-backend
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        value: mongodb+srv://alfiyanajq:Alfiyanaj%24009@cluster0.ybvii8e.mongodb.net/quiz_app?retryWrites=true&w=majority&appName=Cluster0
+      - key: JWT_SECRET
+        value: your-super-secret-jwt-key-change-this-in-production
+      - key: USE_MEMORY_DB
+        value: false 

@@ -27,7 +27,7 @@ app.use('/api/', limiter);
 // CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-domain.com'] 
+    ? ['https://your-quiz-app.vercel.app'] 
     : ['http://localhost:3000'],
   credentials: true
 }));
@@ -44,14 +44,17 @@ const connectDB = async () => {
       return;
     }
     
+    console.log('🔗 Attempting to connect to MongoDB Atlas...');
     await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 5000,
+      socketTimeoutMS: 45000,
     });
-    console.log('✅ Connected to MongoDB');
+    console.log('✅ Connected to MongoDB Atlas successfully!');
   } catch (error) {
-    console.log('⚠️ MongoDB connection failed, using in-memory database');
-    console.log('💡 To use MongoDB, install and start MongoDB service');
+    console.log('⚠️ MongoDB connection failed:', error.message);
+    console.log('💡 Check your MongoDB Atlas connection string and network access');
     process.env.USE_MEMORY_DB = 'true';
   }
 };
