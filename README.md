@@ -2,7 +2,7 @@
 
 A complete full-stack quiz application built with React frontend and Node.js/Express backend with MongoDB database. Features user authentication, quiz management, result tracking, and detailed analytics.
 
-## 🚀 Features
+## Features
 
 ### Frontend (React)
 - **User Authentication**: Login/Register with JWT tokens
@@ -82,7 +82,7 @@ quiz-application/
 └── README.md
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Node.js (version 14 or higher)
@@ -159,7 +159,7 @@ quiz-application/
 - `DELETE /api/results/result/:id` - Delete quiz result
 - `GET /api/results/leaderboard` - Get leaderboard
 
-## 🔐 Security Features
+## Security Features
 
 - **JWT Authentication**: Secure token-based authentication
 - **Password Hashing**: bcryptjs for secure password storage
@@ -169,7 +169,7 @@ quiz-application/
 - **Helmet**: Security headers middleware
 - **Environment Variables**: Secure configuration management
 
-## 📊 Database Schema
+##  Database Schema
 
 ### User Model
 ```javascript
@@ -211,7 +211,7 @@ quiz-application/
 }
 ```
 
-## 🎯 Key Features
+## Key Features
 
 ### User Experience
 - **Seamless Authentication**: Login/register with persistent sessions
@@ -232,7 +232,7 @@ quiz-application/
 - **Error Handling**: Comprehensive error management
 - **Fallback Systems**: Graceful degradation when APIs fail
 
-## 🚀 Deployment
+##  Deployment
 
 ### Frontend Deployment
 ```bash
@@ -255,7 +255,7 @@ JWT_SECRET=your-production-jwt-secret
 NODE_ENV=production
 ```
 
-## 🔧 Development
+##  Development
 
 ### Running in Development Mode
 ```bash
@@ -272,30 +272,3 @@ npm start
 # Install MongoDB locally or use MongoDB Atlas
 # Update MONGODB_URI in server/config.env
 ```
-
-## 📈 Future Enhancements
-
-- **Real-time Features**: WebSocket integration for live updates
-- **Advanced Analytics**: Detailed performance insights
-- **Quiz Categories**: Subject-specific quizzes
-- **Social Features**: Share results, friend challenges
-- **Mobile App**: React Native version
-- **Admin Dashboard**: Comprehensive admin interface
-- **Email Notifications**: Result sharing via email
-- **Offline Support**: Service worker for offline functionality
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-**Built with ❤️ using React, Node.js, Express, and MongoDB** 
