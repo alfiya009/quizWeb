@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+// Updated base URL to point to Render-deployed backend
+const API_BASE_URL = 'https://quizweb-3go7.onrender.com/api';
 
 // Create axios instance with default config
 const api = axios.create({
@@ -19,9 +20,7 @@ api.interceptors.request.use(
     }
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
 // Response interceptor to handle errors
