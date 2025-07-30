@@ -26,11 +26,9 @@ app.use('/api/', limiter);
 
 // CORS configuration
 app.use(cors({
-  origin: [
-    'https://quiz-web-tau.vercel.app',  // ✅ your actual frontend
-    'https://quizweb-3go7.onrender.com', // backend (optional)
-    'http://localhost:3000'              // for local dev
-  ],
+  origin: process.env.NODE_ENV === 'production' 
+    ? ['https://your-quiz-app.vercel.app', 'https://quiz-web-vvlj.onrender.com'] 
+    : ['http://localhost:3000'],
   credentials: true
 }));
 
