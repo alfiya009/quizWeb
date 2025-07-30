@@ -27,7 +27,7 @@ app.use('/api/', limiter);
 // CORS configuration
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-quiz-app.vercel.app'] 
+    ? ['https://your-quiz-app.vercel.app', 'https://quiz-web-vvlj.onrender.com'] 
     : ['http://localhost:3000'],
   credentials: true
 }));
